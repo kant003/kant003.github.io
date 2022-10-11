@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" style="--theFilter: brightness(0.4) sepia(1) hue-rotate(200deg) saturate(8);">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>My teachers</title>
+  <link rel="stylesheet" href="/assets/16550cf6.d64ad486.css" /><style>:root {
+        --title-color: white;
+      }
+      html {
+        font-family: system-ui, sans-serif;
+        background-color: #f6f6f6;
+      }
+
+      body {
+        margin: 0;
+        background: url("/images/fondo.png") rgb(23, 15, 30);
+        color: rgb(229, 225, 230);
+      }
+      h1 {
+        color: var(--title-color);
+        font-size: 3em;
+      }
+
+	  
+
+      main {
+        margin: 30px;
+      }
+
+      .header-image {
+        content: "";
+        margin: 0px auto;
+/*         filter: brightness(0.4) sepia(1) hue-rotate(90deg) saturate(8);
+ */        
+ 	filter: var(--theFilter);
+        background-image: url("/images/reja.svg");
+        opacity: 0.2;
+        -webkit-mask-image: radial-gradient(
+          70% 80% at 50% 50%,
+          black 40%,
+          transparent 70%
+        );
+        width: 100%;
+        height: 300px;
+		fill: yellow;
+      }
+
+	  .halo{
+		text-shadow: #ffd74d99 -1px -1px 6px,
+          #7c7fff99 1px 1px 6px;
+        overflow-wrap: break-word;
+	  }
+      
+     
+     
+      .title {
+        position: absolute;
+        top: 150px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 4em;
+        font-family: "Inter", "Poppins", sans-serif;
+      }</style></head>
+  <body>
+    <nav class="sticky astro-ZOIEDV2S">
+	<a class="link astro-ZOIEDV2S" href="/">Home</a>
+	<a class="link astro-ZOIEDV2S" href="/teachers/"> My teachers</a>
+	<a class="link astro-ZOIEDV2S" href="/films/"> Favourite Film</a>
+	<a class="link astro-ZOIEDV2S" href="/tecnologies/"> Tecnologies</a>
+	<a class="link astro-ZOIEDV2S" href="/experiences/">Experience</a>
+	<a class="link astro-ZOIEDV2S" href="/projects/">Projects</a>
+</nav>
+    <header>
+      <div class="header-image"></div>
+      <h1 class="title halo">Ángel González</h1>
+    </header>
+    <main>
+      <h1 class="halo">My teachers</h1>
+      <h2>Here is a list of DAM teachers</h2><ul>
+    <li>Bea</li><li>Pepe</li><li>Angel</li>
+  </ul>
+    </main>
+    <footer class="astro-Q53IHWHW">
+	&copy; 2022 Angel Gonzalez
+	<small class="byline astro-Q53IHWHW">🚀 Contruido con AstroJS</small>
+</footer>
+    
+  </body>
+</html>
